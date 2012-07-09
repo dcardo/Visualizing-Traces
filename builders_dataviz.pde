@@ -11,7 +11,7 @@ void setup()
   // load issue data from CSV file
   // parse the data line by line
   
-  String lines[] = loadStrings("datatest2.csv");
+  String lines[] = loadStrings("datatest.csv");
 
   for (int i=0; i < lines.length; i++) 
   {
