@@ -1,8 +1,10 @@
-// Dissertation chapter 6 data viz sketch
-// a visualization depicting the information flow in a BIM coordination process.
-// Based on data collected from a team of 4 GT BIM coordinators in AD.
 
 import java.lang.IllegalArgumentException;
+import controlP5.*;
+float[] datesarray; 
+
+PFont pfont = createFont("verdana",20, false); // use true/false for smooth/no-smooth
+ControlFont font = new ControlFont(pfont,200);
 
 // SOURCE
 
@@ -14,10 +16,8 @@ String IMAGEFOLDERPATH = "/Users/Daniel/Dropbox/0 BUILDERS_DATAVIZ/1 CODE/bimviz
 ArrayList issue_set;              // this arraylist is contains all of the data
 ArrayList iset;                   // this arraylist contains only the "active" data (changes with date)
 ArrayList dates;                  // this arrayList is to store the dates
-ArrayList organizations;		  // this arrayList is to store the organizations
-ArrayList buildings;			  // this arrayList is to store the buildings
-
-
+ArrayList organizations;          // this arrayList is to store the organizations
+ArrayList buildings;		  // this arrayList is to store the buildings
 
 PGraphics pick_buffer;
 int selected_issue = -1;
@@ -28,7 +28,6 @@ int date_counter;
 int viz_mode = 0;
 
 Date active_date;
-
 
 // DATA FIELDS
 
@@ -76,6 +75,14 @@ int tree_switch = 0;
 color[] colors_organizations = {color(0, 0, 255), color(91, 198, 140), color(90, 255, 126), color(188, 255, 97), color(191, 214, 0), color(204, 153, 0)};
 color[] colors_buildings = {color(167, 171, 240), color(59, 151, 255), color(100, 100, 255), color(101, 97, 170), color(163, 148, 255)};
 
+// GUI
+
+ControlP5 cp5;
+int knobValue = 100;
+Knob myKnobA;
+Knob myKnobB;
+Range range;
+Slider date_slider;
 
 
 // FONTS
