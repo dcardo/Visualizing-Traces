@@ -48,11 +48,12 @@ class Issue {
       action =       values[19];
       person =       values[20];
       organization = values[21];
-      imagepath =    "test"; // IMAGEFOLDERPATH + "/" + IMAGES[(int)random(IMAGES.length)];
-      
+      //imagepath =    IMAGEFOLDERPATH + "/" + IMAGES[(int)random(IMAGES.length)];
+      imagepath = "test"; 
     } catch (Exception e) {
 
       println("Illegal Argument Exception 2");
+      println(imagepath);
       throw new IllegalArgumentException();
     
     }

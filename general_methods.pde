@@ -146,15 +146,18 @@ void update_info(){
     text("Responsible person: " + issue.person, ISSUE_PANEL_X, ISSUE_PANEL_Y + (separator * 7));
     text(issue.description, ISSUE_PANEL_X, ISSUE_PANEL_Y + (separator * 8), 250, 100);
     //println("path: " + issue.imagepath.substring(issue.imagepath.length() - 9));
-
-    if (issue.imagepath.substring(issue.imagepath.length() - 9).equals(".DS_Store")){
-    }
-    else{
-      b = loadImage(issue.imagepath);
-      image(b, 1000, 340);  
+    
+    try {
+      if (issue.imagepath.substring(issue.imagepath.length() - 9).equals(".DS_Store")){
       }
-    //println("selected issue: " + selected_issue);
-    //println("organization: " + issue.organization);
+      else{
+        b = loadImage(issue.imagepath);
+        image(b, 1000, 340);  
+        }
+    }
+    catch (Exception e){
+      
+    }
   }
 }
 

@@ -37,6 +37,8 @@ void setup()
   // parse issues  
   
   String lines[] = loadStrings(DATASOURCE);
+  
+
 
   for (int i=0; i < lines.length; i++)
   { 
@@ -46,14 +48,10 @@ void setup()
     println("--------------");
     println(i);
     println("--------------");
-    //print_csv_line(values);  
     
     try {
-      Issue issue = new Issue(values);
-      
+      Issue issue = new Issue(values);    
       issue_set.add(issue);
-      println("Issue # " + i + " id: " + issue.id);
-
       good_issues_count += 1;
  
     } catch (Exception e) {
@@ -68,6 +66,9 @@ void setup()
   println("Number of issues parsed: " + issue_set.size());
   println("Number of bad issues: " + bad_issues_count);
 
+  //for (int ii = 0; ii < IMAGES.length; ii++){
+  //  println(IMAGES[ii]);
+  //}
 }
 
 void draw() {

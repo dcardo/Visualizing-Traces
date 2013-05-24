@@ -9,7 +9,8 @@ ControlFont font = new ControlFont(pfont,200);
 // SOURCE
 
 String DATASOURCE = "clean_03.csv";
-String IMAGEFOLDERPATH = "/Users/Daniel/Dropbox/0 BUILDERS_DATAVIZ/1 CODE/bimviz/data/issue_images";
+//String IMAGEFOLDERPATH = "/Users/Daniel/Dropbox/0 BUILDERS_DATAVIZ/1 CODE/bimviz/data/issue_images";
+String IMAGEFOLDERPATH = "test";
 
 // DATA STRUCTURES
 
