@@ -11,11 +11,7 @@ void setup()
   dates =         new ArrayList();
   organizations = new ArrayList();
   buildings =     new ArrayList();
-
-  IMAGES = listFileNames("/Users/Daniel/github/local/BOTV_DataViz/data/issue_images");
   
-  //println(IMAGES[0]);
-
   date_counter = 0;   // keeps track of the active date, relates to the ArrayList "dates"
   iset.clear();       // cleans the issue arraylist
  
@@ -44,12 +40,6 @@ void setup()
   parse_buildings();  
   make_gui();
 
-  println("Number of issues parsed: " + issue_set.size());
-  println("Number of bad issues: " + bad_issues_count);
-
-  //for (int ii = 0; ii < IMAGES.length; ii++){
-  //  println(IMAGES[ii]);
-  //}
 }
 
 void draw() {

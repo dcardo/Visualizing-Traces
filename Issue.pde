@@ -1,5 +1,4 @@
-import java.util.Date;
-import java.text.SimpleDateFormat;
+
 
 DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 
@@ -48,14 +47,12 @@ class Issue {
       action =       values[19];
       person =       values[20];
       organization = values[21];
-      //imagepath =    IMAGEFOLDERPATH + "/" + IMAGES[(int)random(IMAGES.length)];
-      imagepath = "test"; 
+      
+      // TODO: create precise (non-random) links between image and issue
+      imagepath =    IMAGEFOLDERPATH + "/" + IMAGES[(int)random(IMAGES.length)];
+      
     } catch (Exception e) {
-
-      println("Illegal Argument Exception 2");
-      println(imagepath);
-      throw new IllegalArgumentException();
-    
+        throw new IllegalArgumentException();    
     }
   }
 

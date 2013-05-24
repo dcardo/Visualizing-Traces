@@ -24,15 +24,7 @@ void test_filters(){
 	}
 }
 
-
-void test_issue_display(){
-
-
-
-
-}
-
-
+/*
 void test_load_random_image(){
 
 	// works
@@ -42,5 +34,5 @@ void test_load_random_image(){
 		println(i + " :" +s[i]);
 	}
 
-
 }
+*/

@@ -1,6 +1,13 @@
 
+// imports
+
 import java.lang.IllegalArgumentException;
 import controlP5.*;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+// global values
+
 float[] datesarray; 
 
 PFont pfont = createFont("verdana",20, false); // use true/false for smooth/no-smooth
@@ -9,9 +16,12 @@ ControlFont font = new ControlFont(pfont,200);
 // SOURCE
 
 String DATASOURCE = "issuedata.csv";
-//String IMAGEFOLDERPATH = "/Users/Daniel/Dropbox/0 BUILDERS_DATAVIZ/1 CODE/bimviz/data/issue_images";
-String IMAGEFOLDERPATH = "issue_images";
-//String IMAGEFOLDERPATH = "test";
+
+// Note: 
+// The path is local because I haven't been able to "list" file names in a relative path folder.
+// This needs to be addressed.
+
+String IMAGEFOLDERPATH = "/Users/Daniel/github/local/BOTV_DataViz/data/issue_images";
 
 // DATA STRUCTURES
 
@@ -36,7 +46,7 @@ Date active_date;
 String FIELDS[] = {"INDEX", "BUILDING", "LEVEL", "TRADE", "INT CODE", "DISCIPLINE", "DWG REF", "ZONE", "GRID X1", "GRID X2", "GRID Y1", "GRID Y2", "GT CODE", "KEY", "ISSUE DESCRIPTION", "OPENING DATE", "STATUS", "ACTION BY DATE", "LAST CHANGE", "ACTION", "BY NAME", "ORGANIZATION", "RFI", "EXT MEETING DATE", "EXT. MEETING ACTION"};
 String ORGANIZATIONS[] = {"ARCH", "INTS", "CONS", "CONC", "MEP", "STEL"};
 String BUILDINGS[] = {"B1", "B2","B3", "B4", "B5"}; // ZONE1_
-String IMAGES[]; 
+String IMAGES[] = listFileNames(IMAGEFOLDERPATH);; 
 
 // VISUAL VARIABLES
 
@@ -58,11 +68,11 @@ int MY_WIDTH = 1300;
 int MY_HEIGHT = 1000;
 
 int CENTERX = 500;
-int CENTERY = 500;
+int CENTERY = 450;
 
 int SLIDER_WIDTH = 700;
 int SLIDER_POSX = 50;
-int SLIDER_POSY = 100;
+int SLIDER_POSY = 900;
 
 int KNOBS_X = SLIDER_POSX + SLIDER_WIDTH + 50;
 int KNOBS_Y = SLIDER_POSY;
