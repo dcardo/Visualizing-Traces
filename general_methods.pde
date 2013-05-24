@@ -1,4 +1,29 @@
 
+void parse_issues(){
+  String lines[] = loadStrings(DATASOURCE); 
+  for (int i=0; i < lines.length; i++)
+  { 
+    // creates an array with the comma separated elements of each line
+    String values[] = split(lines[i], ",");
+    /*
+    println("");
+    println("--------------");
+    println(i);
+    println("--------------");
+    */
+    try {
+      Issue issue = new Issue(values);    
+      issue_set.add(issue);
+      good_issues_count += 1;
+ 
+    } catch (Exception e) {
+        println("Creation of issue " + i + " failed.");
+        bad_issues_count += 1;
+    }
+  } 
+  
+}
+
 void parse_dates(){
   // populates a global ArrayList with the dates
   int i;
@@ -170,6 +195,7 @@ String[] listFileNames(String dir) {
      }
      else {
     // If it’s not a directory
+       println("not a valid directory.");
        return null;
   }
 }

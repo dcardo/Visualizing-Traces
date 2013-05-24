@@ -8,13 +8,14 @@ ControlFont font = new ControlFont(pfont,200);
 
 // SOURCE
 
-String DATASOURCE = "clean_03.csv";
+String DATASOURCE = "issuedata.csv";
 //String IMAGEFOLDERPATH = "/Users/Daniel/Dropbox/0 BUILDERS_DATAVIZ/1 CODE/bimviz/data/issue_images";
-String IMAGEFOLDERPATH = "test";
+String IMAGEFOLDERPATH = "issue_images";
+//String IMAGEFOLDERPATH = "test";
 
 // DATA STRUCTURES
 
-ArrayList issue_set;              // this arraylist is contains all of the data
+ArrayList issue_set;              // this arraylist contains all of the issue data
 ArrayList iset;                   // this arraylist contains only the "active" data (changes with date)
 ArrayList dates;                  // this arrayList is to store the dates
 ArrayList organizations;          // this arrayList is to store the organizations
@@ -35,7 +36,7 @@ Date active_date;
 String FIELDS[] = {"INDEX", "BUILDING", "LEVEL", "TRADE", "INT CODE", "DISCIPLINE", "DWG REF", "ZONE", "GRID X1", "GRID X2", "GRID Y1", "GRID Y2", "GT CODE", "KEY", "ISSUE DESCRIPTION", "OPENING DATE", "STATUS", "ACTION BY DATE", "LAST CHANGE", "ACTION", "BY NAME", "ORGANIZATION", "RFI", "EXT MEETING DATE", "EXT. MEETING ACTION"};
 String ORGANIZATIONS[] = {"ARCH", "INTS", "CONS", "CONC", "MEP", "STEL"};
 String BUILDINGS[] = {"B1", "B2","B3", "B4", "B5"}; // ZONE1_
-String IMAGES[] = listFileNames("/Users/Daniel/Dropbox/0 BUILDERS_DATAVIZ/1 CODE/bimviz/data/issue_images");
+String IMAGES[]; 
 
 // VISUAL VARIABLES
 
