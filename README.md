@@ -5,7 +5,7 @@ This project is about interactively collecting and visualizing large amounts of 
 
 Languages:
 
-- Processing, v. 1.5.1. Currently being updated to the latest version (2.0b8).
+- Processing, v. 1.5.1. The update to the latest version of Processing (2.0b9 as of May-13) will be here soon.
 - I plan to upload the data collection module, which was written in Microsoft VisualBasic.
 
 All the code in this project is licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License. You are free to share and remix the code, as long as you provide attribution and do not seek commercial benefit.
