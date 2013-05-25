@@ -1,4 +1,16 @@
 
+//
+// BOTV_DataViz
+// Daniel Cardoso Llach
+//
+// http://mit.edu/dcardoso/www
+// http://vimeo.com/51693897
+//
+// Global Values
+//
+// -----------------------------------
+
+
 // imports
 
 import java.lang.IllegalArgumentException;
@@ -21,7 +33,7 @@ String DATASOURCE = "issuedata.csv";
 // The path is local because I haven't been able to "list" file names in a relative path folder.
 // This needs to be addressed.
 
-String IMAGEFOLDERPATH = "/Users/Daniel/github/local/BOTV_DataViz/data/issue_images";
+String IMAGEFOLDERPATH = "/Users/Daniel/github/local/BOTV_DataViz/BOTV_DataViz/data/issue_images";
 
 // DATA STRUCTURES
 

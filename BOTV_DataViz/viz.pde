@@ -1,6 +1,17 @@
+//
+// BOTV_DataViz
+// Daniel Cardoso Llach
+//
+// http://mit.edu/dcardoso/www
+// http://vimeo.com/51693897
+//
+// Visualization and Geometry Code
+//
+// -----------------------------------
+
+
 void draw_rings(){
     
-
   strokeWeight(0.25);
   stroke(100);
   noFill();

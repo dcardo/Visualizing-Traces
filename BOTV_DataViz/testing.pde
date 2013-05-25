@@ -1,3 +1,13 @@
+//
+// BOTV_DataViz
+// Daniel Cardoso Llach
+//
+// http://mit.edu/dcardoso/www
+// http://vimeo.com/51693897
+//
+// Testing Functions
+//
+// -----------------------------------
 
 
 void testing_issue_set(){

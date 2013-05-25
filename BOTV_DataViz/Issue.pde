@@ -1,4 +1,13 @@
-
+//
+// BOTV_DataViz
+// Daniel Cardoso Llach
+//
+// http://mit.edu/dcardoso/www
+// http://vimeo.com/51693897
+//
+// Issue Class
+//
+// -----------------------------------
 
 DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 
@@ -25,7 +34,6 @@ class Issue {
 
   Issue (String[] values) {
     if (values[0].equals("") || values[0].length() != 5 || int(values[0]) == 0) {
-      println("Illegal Argument Exception 1");
       throw new IllegalArgumentException();  
     }
  

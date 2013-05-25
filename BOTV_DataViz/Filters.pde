@@ -1,3 +1,16 @@
+//
+// BOTV_DataViz
+// Daniel Cardoso Llach
+//
+// http://mit.edu/dcardoso/www
+// http://vimeo.com/51693897
+//
+// Filtering Functions (mainly for side display)
+//
+// -----------------------------------
+
+
+
 int issue_count_per_organization(String organization){
   // returns a count of the issues belinging to a specific organization
  int r, i; 

@@ -1,3 +1,14 @@
+//
+// BOTV_DataViz
+// Daniel Cardoso Llach
+//
+// http://mit.edu/dcardoso/www
+// http://vimeo.com/51693897
+//
+// Setup and draw functions
+//
+// -----------------------------------
+
 void setup()
 {
   // initialize picking buffer

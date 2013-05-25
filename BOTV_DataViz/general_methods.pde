@@ -1,3 +1,14 @@
+//
+// BOTV_DataViz
+// Daniel Cardoso Llach
+//
+// http://mit.edu/dcardoso/www
+// http://vimeo.com/51693897
+//
+// General Methods
+//
+// -----------------------------------
+
 
 void parse_issues(){
 
@@ -15,7 +26,6 @@ void parse_issues(){
       good_issues_count += 1;
  
     } catch (Exception e) {
-        println("Creation of issue " + i + " failed.");
         bad_issues_count += 1;
     }
   } 
