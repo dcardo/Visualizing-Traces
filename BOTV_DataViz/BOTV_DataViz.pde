@@ -6,8 +6,8 @@
 // http://vimeo.com/51693897
 //
 // Setup and draw functions
-//
-// -----------------------------------
+// http://creativecommons.org/licenses/by-nc/3.0/
+// ---------------------------------------------------
 
 void setup()
 {

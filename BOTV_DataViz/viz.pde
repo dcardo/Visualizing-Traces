@@ -6,8 +6,9 @@
 // http://vimeo.com/51693897
 //
 // Visualization and Geometry Code
+// http://creativecommons.org/licenses/by-nc/3.0/
 //
-// -----------------------------------
+// -------------------------------------
 
 
 void draw_rings(){
