@@ -1,5 +1,5 @@
-
 BOTV_DataViz: Visualizing BIM Coordination
+==========================================
 
 This project is about interactively collecting and visualizing large amounts of BIM coordination data. It is part of my doctoral research on computer-aided design and building information modeling (its title is "Builders of the vision, hence BOTV"). This repository is meant to help me keep track of the project as I develop it. 
 
